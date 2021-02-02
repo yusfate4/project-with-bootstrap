@@ -10,16 +10,24 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <style>
-    body{
-        background-color: lightgreen;
+body{
+        padding: 40px;
+        margin: 10px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.6rem;
+        background-color: #66bfbf;
         display: flex;
                 justify-content: center;
                 align-items: center;
+
     }
+    
+
 </style>
 <body> 
-    
-<form>
+   
+    <form>
     <label for="username">Enter Username:</label>
     <input type="text" id="username" name="username" placeholder="username" required>
     <br> <br>
@@ -43,7 +51,7 @@
     <br><br>
 
     <label for="question">Security Questions:</label>
-    <select name="question" id="question">
+    <select name="question" id="question" required>
         <option value="q1">What is your father's name?</option>
         <option value="q2">What is your mother's name?</option>
         <option value="q3">What is your son's name?</option>
@@ -52,20 +60,29 @@
     <br><br>
 
     <label for="answer">Security answer:</label>
-    <input type="text" id="answer" name="answer">
+    <input type="text" id="answer" name="answer" required>
 
     <br><br>
 
     <label for="id">Your bio:</label> <br>,<br>
-    <textarea name="bio" id="bio" cols="40" rows="10" placeholder="about you"></textarea>
+    <textarea name="bio" id="bio" cols="40" rows="10" placeholder="about you" required></textarea>
 
 
 
     <br><br>
     <div class="container">
-        <button type="button" class="btn btn-primary active">submit your form</button>
+        <button type="button" class="btn btn-primary active" required>submit your form</button>
       </div>
-    
+    <br><br>
+
+    <div class="container">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="/index.html">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="/index.html">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div>
 
 </form>
 </body>
